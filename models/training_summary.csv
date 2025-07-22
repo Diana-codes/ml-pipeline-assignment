@@ -1,0 +1,4 @@
+,accuracy,f1_score
+facial_recognition,0.2777777777777778,0.29761904761904767
+voice_verification,0.75,0.7388888888888889
+product_recommendation,0.95,0.9514285714285714

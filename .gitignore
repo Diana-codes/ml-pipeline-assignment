@@ -1,0 +1,15 @@
+# Python virtual environment
+ml_pipeline_env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating System files
+.DS_Store
+Thumbs.db
