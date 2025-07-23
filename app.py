@@ -384,7 +384,7 @@ class MultimodalAuthenticationSystem:
         # Step 1: Face Authentication
         print("\n📸 Step 1: Face Authentication")
         # Updated default path to reflect new naming convention and .jpeg extension
-        sample_face_image = 'data/images/member1/Diana_neutral.jpeg' 
+        sample_face_image = 'data/images/member1/neutral_0.jpeg' 
         
         if not os.path.exists(sample_face_image):
             print(f"❌ Sample face image not found at {sample_face_image}. Please run image processing first.")
@@ -453,9 +453,9 @@ def main():
             system.run_full_transaction()
         
         elif choice == '2':
-            image_path = input("Enter image path (or press Enter for default: data/images/member1/Diana_neutral.jpeg): ").strip()
+            image_path = input("Enter image path (or press Enter for default: data/images/member1/neutral_0.jpeg): ").strip()
             if not image_path:
-                image_path = 'data/images/member1/Diana_neutral.jpeg'
+                image_path = 'data/images/member1/neutral_0.jpeg'
             system.authenticate_face(image_path)
         
         elif choice == '3':
