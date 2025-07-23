@@ -192,7 +192,14 @@ def load_and_merge_datasets():
     
     # Create DataFrames
     social_profiles = pd.DataFrame(social_data)
-    transactions = pd.DataFrame(transaction_data)
+    
+    # Fix array length mismatch by truncating to shortest length
+    min_length = min(len(v) for v in transaction_data.values())
+    print(f"Truncating transaction data to {min_length} elements to fix length mismatch")
+    
+    # Truncate all arrays to the same length
+    truncated_transaction_data = {k: v[:min_length] for k, v in transaction_data.items()}
+    transactions = pd.DataFrame(truncated_transaction_data)
 
     # Print lengths for debugging (can be removed later)
     print(f"Length of social_profiles customer_id: {len(social_profiles['customer_id'])}")
