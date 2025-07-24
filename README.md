@@ -6,17 +6,13 @@ This project implements a comprehensive multimodal authentication system that co
 
 ## System Architecture
 
-\`\`\`
-User Access Request
-        ↓
-   Face Recognition
-        ↓
-   Voice Verification
-        ↓
-Product Recommendation
-        ↓
-   Access Granted/Denied
-\`\`\`
+```
+[User Input]
+     ↓
+[Face Recognition ✅] → [Voice Verification ✅] → [Product Recommendation ✅]
+            ↘                      ↘
+        [Denied ❌]            [Denied ❌]
+```
 
 ## Recent Updates
 
@@ -62,25 +58,26 @@ Product Recommendation
 pip install pandas numpy scikit-learn opencv-python librosa soundfile matplotlib seaborn joblib pillow
 \`\`\`
 
-### Quick Start
-1. **Clone/Download the project files**
-2. **Create virtual environment (recommended):**
-\`\`\`bash
-python -m venv ml_pipeline_env
-source ml_pipeline_env/bin/activate  # On Windows: ml_pipeline_env\Scripts\activate
-\`\`\`
-3. **Install dependencies:**
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-4. **Run the complete pipeline:**
-\`\`\`bash
-python run_pipeline.py
-\`\`\`
-5. **Launch the demonstration system:**
-\`\`\`bash
-python app.py
-\`\`\`
+```
+Quick Start
+
+1. Clone/Download the project files
+
+2. Create virtual environment (recommended):
+   bash
+   python -m venv ml_pipeline_env
+   source ml_pipeline_env/bin/activate  # On Windows: ml_pipeline_env\Scripts\activate
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run the complete pipeline:
+   python run_pipeline.py
+
+5. Launch the demonstration system:
+   python app.py
+```
+
 
 ### Troubleshooting
 If you encounter issues during pipeline execution:
@@ -106,26 +103,48 @@ python scripts/audio_processor.py
 python scripts/model_trainer.py
 \`\`\`
 
-## File Structure
-
-\`\`\`
-├── scripts/
-│   ├── data_merger.py          # Data merging and feature engineering
-│   ├── image_processor.py      # Image processing and feature extraction
-│   ├── audio_processor.py      # Audio processing and feature extraction
-│   └── model_trainer.py        # Model training and evaluation
+```
 ├── data/
-│   ├── merged_dataset.csv      # Processed merged dataset
-│   ├── image_features.csv      # Extracted image features
-│   ├── audio_features.csv      # Extracted audio features
-│   ├── images/                 # Sample facial images
-│   └── audio/                  # Sample voice recordings
-├── models/                     # Trained ML models
-├── app.py                      # Main demonstration application
-├── run_pipeline.py            # Complete pipeline runner
-├── analysis.ipynb            # Jupyter notebook analysis
-└── README.md                 # This file
-\`\`\`
+│   ├── audio/
+│   ├── image/
+│   ├── X_test.npy
+│   ├── X_train.npy
+│   ├── audio_analysis.png
+│   ├── audio_features.csv
+│   ├── customer_social_profiles.csv
+│   ├── customer_transactions.csv
+│   ├── image_features.csv
+│   ├── merged_dataset.csv
+│   ├── sample_image_display.png
+│   ├── y_test.npy
+│   └── y_train.npy
+│
+├── models/
+│   ├── audio_scaler.pkl
+│   ├── face_label_encoder.pkl
+│   ├── face_recognition_model.pkl
+│   ├── image_pca.pkl
+│   ├── image_scaler.pkl
+│   ├── product_recommendation_model.pkl
+│   ├── training_summary.csv
+│   ├── voice_label_encoder.pkl
+│   └── voice_verification_model.pkl
+│
+├── scripts/
+│   ├── audio_processor.py
+│   ├── data_merge.py
+│   ├── image_processor.py
+│   └── model_trainer.py
+│
+├── .gitignore
+├├── analysis.ipynb
+├── app.py
+├── README.md
+└── run_pipeline.py
+```
+
+
+
 
 ## Usage
 
@@ -154,13 +173,17 @@ Available options:
 ### Jupyter Notebook Analysis
 Open `analysis.ipynb` for comprehensive data exploration and model analysis.
 
-## Model Performance
+## 📊 Key Results
 
-| Model | Accuracy | F1-Score |
-|-------|----------|----------|
-| Facial Recognition | 0.920 | 0.918 |
-| Voice Verification | 0.880 | 0.875 |
-| Product Recommendation | 0.850 | 0.848 |
+| Model                    | Accuracy | F1 Score |
+|--------------------------|----------|----------|
+| Facial Recognition       | 0.89     | 0.89     |
+| Voice Verification       | 0.75     | 0.74     |
+| Product Recommendation   | 0.87     | 0.87     |
+
+✅ Authorized Access Success Rate: 85%  
+🔒 Unauthorized Blocking Effectiveness: 97%
+
 
 ## Data Augmentation Techniques
 
@@ -236,6 +259,44 @@ The system includes comprehensive demonstration capabilities:
 
 ## Team Contributions
 
+```
+Team Contributions
+
+```
+Team Contributions
+
+👨‍💻 John – Lead Developer & Image Processing
+- Designed and implemented the facial recognition model using Random Forest
+- Developed the image augmentation pipeline (grayscale, rotation, brightness)
+- Led feature extraction and PCA reduction for facial images
+- Coordinated the main execution script (run_pipeline.py)
+
+👩‍🔬 Diana – Audio Processing & Voice Verification
+- Engineered the audio processing pipeline using librosa and soundfile
+- Applied voice augmentations (pitch shift, time stretch, background noise)
+- Extracted MFCCs and spectral features for voice verification
+- Built and evaluated the logistic regression voice model
+
+🧠 Christian – Data Integration & Product Recommendation
+- Merged and cleaned customer social profile and transaction datasets
+- Engineered behavioral features for recommendation model
+- Trained and evaluated the Random Forest product recommendation system
+- Led system evaluation and performance reporting
+
+💡 Joan – System Simulation & Report Documentation
+- Developed the CLI-based demonstration system (app.py)
+- Implemented unauthorized attempt detection logic
+- Created the analysis notebook with performance summaries and visualizations
+- Compiled final documentation, including README and presentation assets
+
+🚀 Response Ashimwe – Project Manager & Multimodal Integration
+- Led project planning, architecture design, and task coordination
+- Integrated face, voice, and product modules into a unified pipeline
+- Developed multimodal decision logic with confidence thresholds and blocking
+- Ensured rubric alignment, final deliverables, and codebase quality
+```
+
+
 This project demonstrates:
 - Advanced data preprocessing techniques
 - Multimodal machine learning implementation
@@ -243,10 +304,4 @@ This project demonstrates:
 - Comprehensive evaluation and analysis
 - Production-ready code structure
 
-## License
 
-This project is created for educational purposes as part of a machine learning assignment.
-
----
-
-**Note**: This system uses synthetic data for demonstration purposes. In a production environment, real user data and advanced security measures would be required.
