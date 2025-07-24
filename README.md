@@ -108,24 +108,35 @@ python scripts/model_trainer.py
 
 ## File Structure
 
-\`\`\`
-├── scripts/
-│   ├── data_merger.py          # Data merging and feature engineering
-│   ├── image_processor.py      # Image processing and feature extraction
-│   ├── audio_processor.py      # Audio processing and feature extraction
-│   └── model_trainer.py        # Model training and evaluation
+ml-pipeline-assignment/
+│
 ├── data/
-│   ├── merged_dataset.csv      # Processed merged dataset
-│   ├── image_features.csv      # Extracted image features
-│   ├── audio_features.csv      # Extracted audio features
-│   ├── images/                 # Sample facial images
-│   └── audio/                  # Sample voice recordings
-├── models/                     # Trained ML models
-├── app.py                      # Main demonstration application
-├── run_pipeline.py            # Complete pipeline runner
-├── analysis.ipynb            # Jupyter notebook analysis
-└── README.md                 # This file
-\`\`\`
+│   ├── image/                  # Raw and augmented facial images
+│   ├── audio/                  # Raw and augmented audio recordings
+│   ├── customer_social_profiles.csv
+│   ├── customer_transactions.csv
+│   ├── merged_dataset.csv      # Final merged dataset
+│   ├── image_features.csv      # Extracted image embeddings/histograms
+│   └── audio_features.csv      # Extracted MFCC and spectral features
+│
+├── notebooks/
+│   └── eda_and_preprocessing.ipynb  # Contains full pipeline and EDA
+│
+├── models/
+│   ├── face_recognition_model.pkl
+│   ├── voice_recognition_model.pkl
+│   └── product_recommendation_model.pkl
+│
+├── scripts/
+│   ├── data_merge.py
+│   ├── image_processor.py
+│   ├── audio_processor.py
+│   ├── model_trainer.py
+│   ├── simulate_cli.py         # Command-line simulation script
+│   └── utils.py
+│
+├── README.md
+└── report.pdf                  # Final report with methodology and results
 
 ## Usage
 
