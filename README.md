@@ -107,36 +107,45 @@ python scripts/model_trainer.py
 \`\`\`
 
 ```
-ml-pipeline-assignment/
-│
 ├── data/
-│   ├── image/                  # Raw and augmented facial images
-│   ├── audio/                  # Raw and augmented audio recordings
+│   ├── audio/
+│   ├── image/
+│   ├── X_test.npy
+│   ├── X_train.npy
+│   ├── audio_analysis.png
+│   ├── audio_features.csv
 │   ├── customer_social_profiles.csv
 │   ├── customer_transactions.csv
-│   ├── merged_dataset.csv      # Final merged dataset
-│   ├── image_features.csv      # Extracted image embeddings/histograms
-│   └── audio_features.csv      # Extracted MFCC and spectral features
-│
-├── notebooks/
-│   └── eda_and_preprocessing.ipynb  # Contains full pipeline and EDA
+│   ├── image_features.csv
+│   ├── merged_dataset.csv
+│   ├── sample_image_display.png
+│   ├── y_test.npy
+│   └── y_train.npy
 │
 ├── models/
+│   ├── audio_scaler.pkl
+│   ├── face_label_encoder.pkl
 │   ├── face_recognition_model.pkl
-│   ├── voice_recognition_model.pkl
-│   └── product_recommendation_model.pkl
+│   ├── image_pca.pkl
+│   ├── image_scaler.pkl
+│   ├── product_recommendation_model.pkl
+│   ├── training_summary.csv
+│   ├── voice_label_encoder.pkl
+│   └── voice_verification_model.pkl
 │
 ├── scripts/
+│   ├── audio_processor.py
 │   ├── data_merge.py
 │   ├── image_processor.py
-│   ├── audio_processor.py
-│   ├── model_trainer.py
-│   ├── simulate_cli.py         # Command-line simulation script
-│   └── utils.py
+│   └── model_trainer.py
 │
+├── .gitignore
+├├── analysis.ipynb
+├── app.py
 ├── README.md
-└── report.pdf                  # Final report with methodology and results
+└── run_pipeline.py
 ```
+
 
 
 
