@@ -262,6 +262,9 @@ The system includes comprehensive demonstration capabilities:
 ```
 Team Contributions
 
+```
+Team Contributions
+
 👨‍💻 John – Lead Developer & Image Processing
 - Designed and implemented the facial recognition model using Random Forest
 - Developed the image augmentation pipeline (grayscale, rotation, brightness)
@@ -285,7 +288,14 @@ Team Contributions
 - Implemented unauthorized attempt detection logic
 - Created the analysis notebook with performance summaries and visualizations
 - Compiled final documentation, including README and presentation assets
+
+🚀 Response Ashimwe – Project Manager & Multimodal Integration
+- Led project planning, architecture design, and task coordination
+- Integrated face, voice, and product modules into a unified pipeline
+- Developed multimodal decision logic with confidence thresholds and blocking
+- Ensured rubric alignment, final deliverables, and codebase quality
 ```
+
 
 This project demonstrates:
 - Advanced data preprocessing techniques
