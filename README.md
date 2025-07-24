@@ -106,8 +106,7 @@ python scripts/audio_processor.py
 python scripts/model_trainer.py
 \`\`\`
 
-## File Structure
-
+```
 ml-pipeline-assignment/
 │
 ├── data/
@@ -137,6 +136,9 @@ ml-pipeline-assignment/
 │
 ├── README.md
 └── report.pdf                  # Final report with methodology and results
+```
+
+
 
 ## Usage
 
