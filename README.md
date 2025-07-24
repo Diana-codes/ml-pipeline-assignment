@@ -58,25 +58,26 @@ This project implements a comprehensive multimodal authentication system that co
 pip install pandas numpy scikit-learn opencv-python librosa soundfile matplotlib seaborn joblib pillow
 \`\`\`
 
-### Quick Start
-1. **Clone/Download the project files**
-2. **Create virtual environment (recommended):**
-\`\`\`bash
-python -m venv ml_pipeline_env
-source ml_pipeline_env/bin/activate  # On Windows: ml_pipeline_env\Scripts\activate
-\`\`\`
-3. **Install dependencies:**
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-4. **Run the complete pipeline:**
-\`\`\`bash
-python run_pipeline.py
-\`\`\`
-5. **Launch the demonstration system:**
-\`\`\`bash
-python app.py
-\`\`\`
+```
+Quick Start
+
+1. Clone/Download the project files
+
+2. Create virtual environment (recommended):
+   bash
+   python -m venv ml_pipeline_env
+   source ml_pipeline_env/bin/activate  # On Windows: ml_pipeline_env\Scripts\activate
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run the complete pipeline:
+   python run_pipeline.py
+
+5. Launch the demonstration system:
+   python app.py
+```
+
 
 ### Troubleshooting
 If you encounter issues during pipeline execution:
@@ -265,10 +266,4 @@ This project demonstrates:
 - Comprehensive evaluation and analysis
 - Production-ready code structure
 
-## License
 
-This project is created for educational purposes as part of a machine learning assignment.
-
----
-
-**Note**: This system uses synthetic data for demonstration purposes. In a production environment, real user data and advanced security measures would be required.
