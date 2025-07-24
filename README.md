@@ -6,17 +6,13 @@ This project implements a comprehensive multimodal authentication system that co
 
 ## System Architecture
 
-\`\`\`
-User Access Request
-        ↓
-   Face Recognition
-        ↓
-   Voice Verification
-        ↓
-Product Recommendation
-        ↓
-   Access Granted/Denied
-\`\`\`
+```
+[User Input]
+     ↓
+[Face Recognition ✅] → [Voice Verification ✅] → [Product Recommendation ✅]
+            ↘                      ↘
+        [Denied ❌]            [Denied ❌]
+```
 
 ## Recent Updates
 
