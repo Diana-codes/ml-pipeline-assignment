@@ -259,6 +259,34 @@ The system includes comprehensive demonstration capabilities:
 
 ## Team Contributions
 
+```
+Team Contributions
+
+👨‍💻 John – Lead Developer & Image Processing
+- Designed and implemented the facial recognition model using Random Forest
+- Developed the image augmentation pipeline (grayscale, rotation, brightness)
+- Led feature extraction and PCA reduction for facial images
+- Coordinated the main execution script (run_pipeline.py)
+
+👩‍🔬 Diana – Audio Processing & Voice Verification
+- Engineered the audio processing pipeline using librosa and soundfile
+- Applied voice augmentations (pitch shift, time stretch, background noise)
+- Extracted MFCCs and spectral features for voice verification
+- Built and evaluated the logistic regression voice model
+
+🧠 Christian – Data Integration & Product Recommendation
+- Merged and cleaned customer social profile and transaction datasets
+- Engineered behavioral features for recommendation model
+- Trained and evaluated the Random Forest product recommendation system
+- Led system evaluation and performance reporting
+
+💡 Joan – System Simulation & Report Documentation
+- Developed the CLI-based demonstration system (app.py)
+- Implemented unauthorized attempt detection logic
+- Created the analysis notebook with performance summaries and visualizations
+- Compiled final documentation, including README and presentation assets
+```
+
 This project demonstrates:
 - Advanced data preprocessing techniques
 - Multimodal machine learning implementation
