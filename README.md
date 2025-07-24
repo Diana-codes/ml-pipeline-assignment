@@ -176,13 +176,17 @@ Available options:
 ### Jupyter Notebook Analysis
 Open `analysis.ipynb` for comprehensive data exploration and model analysis.
 
-## Model Performance
+## 📊 Key Results
 
-| Model | Accuracy | F1-Score |
-|-------|----------|----------|
-| Facial Recognition | 0.920 | 0.918 |
-| Voice Verification | 0.880 | 0.875 |
-| Product Recommendation | 0.850 | 0.848 |
+| Model                    | Accuracy | F1 Score |
+|--------------------------|----------|----------|
+| Facial Recognition       | 0.89     | 0.89     |
+| Voice Verification       | 0.75     | 0.74     |
+| Product Recommendation   | 0.87     | 0.87     |
+
+✅ Authorized Access Success Rate: 85%  
+🔒 Unauthorized Blocking Effectiveness: 97%
+
 
 ## Data Augmentation Techniques
 
